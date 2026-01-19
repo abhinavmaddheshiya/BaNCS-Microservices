@@ -7,7 +7,7 @@ import lombok.*;
 
 @Entity
 @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
-public class Accounts {
+public class Accounts extends BaseEntity{
 
     @Column(name="customer_id")
     private Long customerId;
@@ -21,4 +21,5 @@ public class Accounts {
 
     @Column(name="branch_address")
     private String branchAddress;
+
 }
